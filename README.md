@@ -14,7 +14,7 @@ If you don't want to go the docker way, just install the dependencies in a virtu
  installation and after it's done, run the project, the main script to run is `starter.py`.
  
 ```shell script
-pip install -r requirements/dev.txt
+pip install -r requirements/dev.txt 
 python starter.py --dataset-dir=reuters/dataset
 ```
 
@@ -41,9 +41,7 @@ since we're using beam.
 4. We do multi-label classification, running the training algorithm for 1 epoch reaches a top_5 accuracy of
  nearly +83% which is fine, it can certainly improve with more epochs.
 5. A 2 layer stacked LSTM model is used to classify the data, with 2 Dropout layers to reduce over-fitting.
-6. Generally, solutions here might not be super amazing since it was a showcase of engineering + problem solving
- and time was short! (e.g. the `logging` module, which is setup but not fully working and I didn't find anytime
-  to take a look, have backtracked to print where necessary)    
+6. There are a lot of ways everything could be improved here. Consider it as a PoC kinda thing.
 
 # Future Directions 
 * Train for more epochs, and on better infrastructure (e.g. GPUs, GCP AI Platform, ...) 

@@ -18,7 +18,7 @@ class RecurrentClassifier(BaseClassifier):
     """
     Trains a Recurrent Neural Network (2 stacked LSTMs on top of each other here) and returns the trained model
 
-    API here is neither great nor customizable , since I'm short on time, unfortunately
+    TODO: API here is neither great nor customizable
     """
 
     def __init__(self, x_train, y_train, vocab_size):
